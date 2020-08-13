@@ -1,0 +1,15 @@
+myImage{
+  width: 300px;
+  height: auto;
+  margin: 25px;
+}
+
+.star-img{
+  @extend myImage;
+  border: 2px solid $border-color;
+  padding: $padding-all;
+}
+
+.star-img:hover{
+  padding: 10px;
+}

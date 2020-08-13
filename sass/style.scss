@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'image';
+@import 'mixins';
+@import 'lists';
+// always import partials on top
+// @import 'button';
+
+.col{
+  width: 50%;
+  height: 400px;
+  float:left;
+  /* background: yellow; */
+  /* border: 2px solid gray; */
+}
+.row:after{
+  clear: both;
+  display:table;
+  content:"";
+}
+
+
+body{
+  background: $back-color;
+}
+
+
+
+@mixin dimension ($w, $h, $ls){
+  width: $w;
+  height: $h;
+  letter-spacing: $ls;
+}
+
+// use the same order (width, then height)
+
+button{
+  @include dimension (150px, 30px, 2px);
+  color: $border-color;
+  padding: $padding-all;
+}
+
+p{
+  @include dimension (520px, 150px, 2px);
+  font-family: $font-family;
+  margin: $margin-1+5;
+}
+
+h1{
+  @include dimension (520px, 30px, 2px);
+  font-family: $font-family;
+  margin: $margin-1+5;
+  padding: $padding-all;
+}

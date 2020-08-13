@@ -1,0 +1,23 @@
+
+ nav{
+     background: $back-color;
+     height: 100px;
+ }
+
+ nav ul{
+   margin: 40px auto;
+   border: 1px solid pink;
+   height: 40px;
+   padding: 40px;
+ }
+
+ nav ul li{
+    padding: 10px;
+    list-style: none;
+    display: inline;
+    margin: 40px 5%;
+    // background: $border-color;
+    color: black;
+    font-size: 17px;
+    font-family: $font-family;
+ }
